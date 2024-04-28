@@ -15,4 +15,10 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+
+  get "/expenses" => "expenses#index"
+  post "/expenses" => "expenses#create"
+  get "/expenses/:id" => "expenses#show"
+  patch "/expenses/:id" => "expenses#update"
+  delete "/expenses/:id" => "expenses#destroy"
 end

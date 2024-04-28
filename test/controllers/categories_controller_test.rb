@@ -11,7 +11,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
 
   test "create" do
     assert_difference "Category.count", 1 do
-      post "/categories.json", params: { name: "lake", recommended_percent: "20%" }
+      post "/categories.json", params: { name: "Food", recommended_percent: "20%" }
       assert_response 200
     end
   end
