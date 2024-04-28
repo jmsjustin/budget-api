@@ -9,9 +9,9 @@
 #   end
 User.create!(name: "Hank", email: "hank@example.com", password: "password")
 
-Category.create!(id: 1, name: "Food", recommended_percent: "10%")
-Category.create!(id: 2, name: "Housing", recommended_percent: "25%")
-Category.create!(id: 3, name: "Transportation", recommended_percent: "20%")
+Category.create!(name: "Food", recommended_percent: "10%")
+Category.create!(name: "Housing", recommended_percent: "25%")
+Category.create!(name: "Transportation", recommended_percent: "20%")
 
 Expense.create!(user_id: 1, category_id: 2, name: "Rent", amount: 2500)
-Expense.create!(user_id: 2, category_id: 1, name: "Groceries", amount: 500)
+Expense.create!(user_id: 1, category_id: 1, name: "Groceries", amount: 500)

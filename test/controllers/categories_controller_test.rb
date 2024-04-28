@@ -25,7 +25,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "update" do
-    photo = Category.first
+    category = Category.first
     patch "/categories/#{category.id}.json", params: { name: "Updated name" }
     assert_response 200
 

@@ -11,7 +11,7 @@ class ExpensesControllerTest < ActionDispatch::IntegrationTest
 
   test "create" do
     assert_difference "Expense.count", 1 do
-      post "/expenses.json", params: { user_id: 1, category_id: 2, name: "House", amount: 5000 }
+      post "/expenses.json", params: { user_id: User.first.id, category_id: Category.first.id, name: "House", amount: 5000 }
       assert_response 200
     end
   end
