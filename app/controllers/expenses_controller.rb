@@ -6,9 +6,9 @@ class ExpensesController < ApplicationController
 
   def create
     @expense = Expense.create(
-      user_id: params[:user_id],
+      user_id: 1,
       category_id: params[:category_id],
-      name: params[:params],
+      name: params[:name],
       amount: params[:amount],
     )
     render :show
