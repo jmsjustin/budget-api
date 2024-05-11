@@ -21,7 +21,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     assert_response 200
 
     data = JSON.parse(response.body)
-    assert_equal ["id", "name", "recommended_percent", "created_at", "updated_at"], data.keys
+    assert_equal ["id", "name", "recommended_percent", "expenses", "progress", "description", "created_at", "updated_at"], data.keys
   end
 
   test "update" do

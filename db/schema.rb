@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_10_181616) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.string "recommended_percent"
+    t.integer "recommended_percent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "description"
