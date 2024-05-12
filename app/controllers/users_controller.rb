@@ -21,11 +21,12 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find_by(id: params[:id])
+    @user = current_user
+
     @user.update(
-      name: params[:name] || @user.name,
-      email: params[:email] || @user.email,
-      password_digest: params[:password_digest] || @user.password_digest,
+      # name: params[:name] || @user.name,
+      # email: params[:email] || @user.email,
+      # password_digest: params[:password_digest] || @user.password_digest,
       monthly_budget: params[:monthly_budget] || @user.monthly_budget,
     )
     render :show
