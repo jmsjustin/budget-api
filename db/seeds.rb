@@ -9,10 +9,10 @@
 #   end
 User.create!(name: "Hank", email: "hank@example.com", password: "password", monthly_budget: 3500)
 
-Category.create!(description: "Obviously this is where you put your bills n' shit", name: "Bills & Subscriptions", recommended_percent: "50%")
-Category.create!(description: "This is where the rest of your spending shit goes. You know, like Groceries, Golf, your moms allowance, etc... ", name: "Spending", recommended_percent: "30%")
-Category.create!(description: "There you go! Now we're talkin'. Be smart with your money, don't do dumb shit like spend money you don't have and go into more debt", name: "Savings", recommended_percent: "20%")
-Category.create!(description: "Debt sucks. Nobody likes that person who can't go out because they spend all their money trying to pay off the dumb shit they bought. Don't be that person ", name: "Debt", recommended_percent: "0%")
+Category.create!(description: "Obviously this is where you put your bills n' stuff", name: "Bills & Subscriptions", recommended_percent: "50%")
+Category.create!(description: "This is where the rest of your spending stuff goes. You know, like Groceries, Golf, your moms allowance, etc... ", name: "Spending", recommended_percent: "30%")
+Category.create!(description: "There you go! Now we're talkin'. Be smart with your money, don't do dumb stuff like spend money you don't have and go into more debt", name: "Savings", recommended_percent: "20%")
+Category.create!(description: "Debt sucks. Nobody likes that person who can't go out because they spend all their money trying to pay off the dumb stuff they bought. Don't be that person ", name: "Debt", recommended_percent: "0%")
 
 Expense.create!(user_id: 1, category_id: 1, name: "Netflix", amount: 32)
 Expense.create!(user_id: 1, category_id: 1, name: "Rent", amount: 1500)
